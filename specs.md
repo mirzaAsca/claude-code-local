@@ -17,11 +17,11 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
     - [ ] **1.2.2** Add Bun runtime alias handling (or equivalent bundler resolution) so `src/*` works both in type-check and runtime entrypoints.
     - [ ] **1.2.3** Verify key entrypoints resolve through alias: `entrypoints/cli.tsx`, `main.tsx`, `cli/print.ts`, `QueryEngine.ts`.
   - [ ] **1.3** Add a local feature/macro compatibility layer.
-    - [ ] **1.3.1** Replace `bun:bundle` feature usage at runtime with a local `feature()` shim that reads a checked-in feature map.
-      - [ ] **1.3.1.1** Add `reconstruction/features.json` with explicit `true|false` flags.
-      - [ ] **1.3.1.2** Add `reconstruction/feature.ts` exporting `feature(name: string): boolean` backed by `features.json`.
-      - [ ] **1.3.1.3** Codemod imports from `bun:bundle` to local shim (`import { feature } from './reconstruction/feature.js'` or `src/reconstruction/feature.js`).
-      - [ ] **1.3.1.4** Default unresolved/unsupported feature trees to `false` so startup remains deterministic.
+    - [x] **1.3.1** Replace `bun:bundle` feature usage at runtime with a local `feature()` shim that reads a checked-in feature map.
+      - [x] **1.3.1.1** Add `reconstruction/features.json` with explicit `true|false` flags.
+      - [x] **1.3.1.2** Add `reconstruction/feature.ts` exporting `feature(name: string): boolean` backed by `features.json`.
+      - [x] **1.3.1.3** Codemod imports from `bun:bundle` to local shim (`import { feature } from './reconstruction/feature.js'` or `src/reconstruction/feature.js`).
+      - [x] **1.3.1.4** Default unresolved/unsupported feature trees to `false` so startup remains deterministic.
     - [ ] **1.3.2** Provide build-time replacements for `MACRO.*` constants (`VERSION`, `BUILD_TIME`, `PACKAGE_URL`) via a generated local metadata file.
       - [ ] **1.3.2.1** Add `reconstruction/macros.json` as editable source of truth.
       - [ ] **1.3.2.2** Add generator script to produce `reconstruction/generated/macros.ts` and a global `MACRO` type declaration.

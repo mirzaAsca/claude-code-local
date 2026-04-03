@@ -1,4 +1,4 @@
-import { feature } from 'bun:bundle'
+import { feature } from 'src/reconstruction/feature.js'
 import type {
   ContentBlockParam,
   ToolResultBlockParam,
