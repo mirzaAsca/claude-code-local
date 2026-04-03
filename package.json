@@ -7,9 +7,11 @@
   "scripts": {
     "dev": "bun --watch entrypoints/cli.tsx",
     "build": "bun build entrypoints/cli.tsx --target bun --format esm --outdir dist --sourcemap",
+    "test": "bun test",
     "typecheck": "bunx tsc --noEmit",
     "reconstruct:scan": "bun run scripts/reconstruct-scan.ts",
-    "reconstruct:hydrate": "bun run scripts/reconstruct-hydrate.ts",
+    "reconstruct:macros": "bun run scripts/reconstruct-macros.ts",
+    "reconstruct:hydrate": "bun run scripts/reconstruct-hydrate.ts && bun run reconstruct:macros",
     "reconstruct:verify": "bun run scripts/reconstruct-verify.ts"
   },
   "dependencies": {

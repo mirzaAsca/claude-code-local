@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "generatedAt": "2026-04-03T00:00:00.000Z",
+  "notes": "Editable source-of-truth for local macro constants. Regenerate outputs with `bun run reconstruct:macros` after edits.",
+  "macros": {
+    "VERSION": "0.0.0-local",
+    "BUILD_TIME": "2026-04-03T00:00:00.000Z",
+    "PACKAGE_URL": "@anthropic-ai/claude-code",
+    "NATIVE_PACKAGE_URL": null,
+    "FEEDBACK_CHANNEL": "https://github.com/anthropics/claude-code/issues",
+    "ISSUES_EXPLAINER": "https://github.com/anthropics/claude-code/issues",
+    "VERSION_CHANGELOG": ""
+  }
+}

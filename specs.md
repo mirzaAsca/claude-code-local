@@ -16,17 +16,19 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
     - [ ] **1.2.1** Add `paths` mapping in `tsconfig.json`: `"src/*": ["./*"]`.
     - [ ] **1.2.2** Add Bun runtime alias handling (or equivalent bundler resolution) so `src/*` works both in type-check and runtime entrypoints.
     - [ ] **1.2.3** Verify key entrypoints resolve through alias: `entrypoints/cli.tsx`, `main.tsx`, `cli/print.ts`, `QueryEngine.ts`.
-  - [ ] **1.3** Add a local feature/macro compatibility layer.
+  - [x] **1.3** Add a local feature/macro compatibility layer.
     - [x] **1.3.1** Replace `bun:bundle` feature usage at runtime with a local `feature()` shim that reads a checked-in feature map.
       - [x] **1.3.1.1** Add `reconstruction/features.json` with explicit `true|false` flags.
       - [x] **1.3.1.2** Add `reconstruction/feature.ts` exporting `feature(name: string): boolean` backed by `features.json`.
       - [x] **1.3.1.3** Codemod imports from `bun:bundle` to local shim (`import { feature } from './reconstruction/feature.js'` or `src/reconstruction/feature.js`).
       - [x] **1.3.1.4** Default unresolved/unsupported feature trees to `false` so startup remains deterministic.
-    - [ ] **1.3.2** Provide build-time replacements for `MACRO.*` constants (`VERSION`, `BUILD_TIME`, `PACKAGE_URL`) via a generated local metadata file.
-      - [ ] **1.3.2.1** Add `reconstruction/macros.json` as editable source of truth.
-      - [ ] **1.3.2.2** Add generator script to produce `reconstruction/generated/macros.ts` and a global `MACRO` type declaration.
-      - [ ] **1.3.2.3** Ensure all `MACRO.*` references compile in `main.tsx`, `cli/update.ts`, and `services/analytics/metadata.ts`.
-      - [ ] **1.3.2.4** Add a `reconstruct:macros` substep or include macro generation in `reconstruct:hydrate`.
+    - [x] **1.3.2** Provide build-time replacements for `MACRO.*` constants (`VERSION`, `BUILD_TIME`, `PACKAGE_URL`) via a generated local metadata file.
+      - [x] **1.3.2.1** Add `reconstruction/macros.json` as editable source of truth.
+      - [x] **1.3.2.2** Add generator script to produce `reconstruction/generated/macros.ts` and a global `MACRO` type declaration.
+      - [x] **1.3.2.3** Ensure all `MACRO.*` references compile in `main.tsx`, `cli/update.ts`, and `services/analytics/metadata.ts`.
+      - [x] **1.3.2.4** Add a `reconstruct:macros` substep or include macro generation in `reconstruct:hydrate`.
+      - [x] **1.3.2.5** Add automated tests for macro config validation and generated artifact output.
+      - [x] **1.3.2.6** Validate generated macro artifacts and fast-path version output at runtime.
   - [ ] **1.4** Add public interfaces: `reconstruction/features.json` and `reconstruction/macros.json` as the source of truth for local feature flags and macro constants.
     - [ ] **1.4.1** Define a stable schema section at top of each file (`version`, `generatedAt`, `notes`).
     - [ ] **1.4.2** Add JSON schema validation in reconstruction scripts and fail on unknown keys.
@@ -122,6 +124,10 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
     - [ ] **6.1.1** Run `bun run reconstruct:scan` and archive report artifacts in `reconstruction/reports/`.
     - [ ] **6.1.2** Confirm `unresolved-runtime.json` is empty for all features currently set `true`.
     - [ ] **6.1.3** Confirm remaining unresolved imports are either behind disabled flags or have manifest status `stubbed`.
+  - [x] **6.3** Macro compatibility layer validation.
+    - [x] **6.3.1** Run `bun test scripts/reconstruct-macros.test.ts` for schema validation and artifact generation coverage.
+    - [x] **6.3.2** Run `bun run reconstruct:macros` and confirm generated outputs are written to `reconstruction/generated/`.
+    - [x] **6.3.3** Run `bun entrypoints/cli.tsx --version` and confirm `MACRO.VERSION` is available in startup fast path.
   - [ ] **6.2** Type-check/build completes for the reconstructed tree.
     - [ ] **6.2.1** Run `bunx tsc --noEmit`.
     - [ ] **6.2.2** Run `bun run build`.
