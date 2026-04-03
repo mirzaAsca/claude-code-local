@@ -54,14 +54,14 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
 
 - [ ] **3. Recover high-impact missing surfaces first (critical path)**
   - [ ] **3.1** Prioritize recovery/stubbing for modules blocking startup and REPL flow.
-    - [ ] **3.1.1** Core entrypoint dependencies.
-      - [ ] **3.1.1.1** Trace startup chain: `entrypoints/cli.tsx -> main.tsx -> entrypoints/init.ts -> replLauncher.tsx`.
-      - [ ] **3.1.1.2** Recover/stub first missing modules in that chain before addressing feature branches.
-      - [ ] **3.1.1.3** Confirm `--version` and `--help` can execute without loading unrecovered optional trees.
-    - [ ] **3.1.2** Command registry dependencies.
-      - [ ] **3.1.2.1** Recover/stub direct imports in `commands.ts` and command descriptors needed by `help`, `config`, `session`, `permissions`.
-      - [ ] **3.1.2.2** Keep unavailable commands hidden behind `isEnabled()` + feature gates rather than hard failure.
-      - [ ] **3.1.2.3** Ensure `findCommand()/getCommands()` do not throw during initial REPL boot.
+    - [x] **3.1.1** Core entrypoint dependencies.
+      - [x] **3.1.1.1** Trace startup chain: `entrypoints/cli.tsx -> main.tsx -> entrypoints/init.ts -> replLauncher.tsx`.
+      - [x] **3.1.1.2** Recover/stub first missing modules in that chain before addressing feature branches.
+      - [x] **3.1.1.3** Confirm `--version` and `--help` can execute without loading unrecovered optional trees.
+    - [x] **3.1.2** Command registry dependencies.
+      - [x] **3.1.2.1** Recover/stub direct imports in `commands.ts` and command descriptors needed by `help`, `config`, `session`, `permissions`.
+      - [x] **3.1.2.2** Keep unavailable commands hidden behind `isEnabled()` + feature gates rather than hard failure.
+      - [x] **3.1.2.3** Ensure `findCommand()/getCommands()` do not throw during initial REPL boot.
     - [ ] **3.1.3** Core task/tool wiring.
       - [ ] **3.1.3.1** Recover/stub required modules for `Tool.ts`, `tools.ts`, `services/tools/toolExecution.ts`, `services/tools/toolOrchestration.ts`.
       - [ ] **3.1.3.2** Ensure permission pipeline remains intact (`utils/permissions/permissions.ts`).
