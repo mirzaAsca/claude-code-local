@@ -67,8 +67,8 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
       - [ ] **3.1.3.2** Ensure permission pipeline remains intact (`utils/permissions/permissions.ts`).
       - [ ] **3.1.3.3** Keep task polling/storage path functional (`Task.ts`, `tasks.ts`, `utils/task/*`).
     - [ ] **3.1.4** Required type modules (`types/message`, `types/tools`, and related control/runtime SDK types).
-      - [ ] **3.1.4.1** Reconstruct `types/message.ts` and `types/tools.ts` first (highest fan-out imports).
-      - [ ] **3.1.4.2** Reconstruct missing SDK transport types (`entrypoints/sdk/controlTypes.ts`, related SDK utility types).
+      - [x] **3.1.4.1** Reconstruct `types/message.ts` and `types/tools.ts` first (highest fan-out imports).
+      - [x] **3.1.4.2** Reconstruct missing SDK transport types (`entrypoints/sdk/controlTypes.ts`, related SDK utility types).
       - [ ] **3.1.4.3** Add temporary minimal interfaces only if exact types are unavailable, then track upgrade TODO in manifest.
   - [ ] **3.2** Explicitly gate/defer unsupported advanced surfaces behind disabled feature flags until recovered.
     - [ ] **3.2.1** `remote/bridge/workflow/monitor/tungsten/proactive` and similar missing feature trees.
