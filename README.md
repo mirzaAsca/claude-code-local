@@ -110,3 +110,12 @@ docs/
 
 - This snapshot does not include a checked-in `package.json`, so the package inventory is inferred from imports and module usage.
 - The persistence layer is largely file-backed rather than a conventional SQL database, so the data-layer doc focuses on transcripts, history, memdir, and migrations.
+
+## Bootstrap Compile Check
+
+- Run `bun run typecheck` (alias for `bunx tsc --noEmit`) after `bun install`.
+- Expected baseline failures before reconstruction/hydration include missing source modules that are referenced throughout the tree:
+  - `types/message.ts`
+  - `types/tools.ts`
+  - `entrypoints/sdk/controlTypes.ts`
+- Additional failures from unresolved build-time surfaces (`MACRO.*` constants and `bun:bundle` feature gating) are expected until the compatibility layer in `specs.md` item `1.3` is implemented.
