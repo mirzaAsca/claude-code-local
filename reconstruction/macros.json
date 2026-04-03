@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generatedAt": "2026-04-03T00:00:00.000Z",
-  "notes": "Editable source-of-truth for local macro constants. Regenerate outputs with `bun run reconstruct:macros` after edits.",
+  "notes": "Hand-edit this file as source-of-truth for macro constants. Regenerate outputs with `bun run reconstruct:macros` and do not hand-edit reconstruction/generated/*.",
   "macros": {
     "VERSION": "0.0.0-local",
     "BUILD_TIME": "2026-04-03T00:00:00.000Z",

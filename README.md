@@ -105,6 +105,7 @@ docs/
 - If `package.json` is absent, keep the package inventory source-derived and say so explicitly.
 - Prefer short, navigable docs over one large monolithic architecture file.
 - Keep file names stable and ordered so the docs tree stays readable.
+- For reconstruction compatibility inputs (`reconstruction/features.json` and `reconstruction/macros.json`), follow the edit policy in [`reconstruction/README.md`](reconstruction/README.md).
 
 ## Notes
 
@@ -119,3 +120,35 @@ docs/
   - `types/tools.ts`
   - `entrypoints/sdk/controlTypes.ts`
 - Additional failures from unresolved build-time surfaces (`MACRO.*` constants and `bun:bundle` feature gating) are expected until the compatibility layer in `specs.md` item `1.3` is implemented.
+
+## Reconstruction Hydration
+
+The hydration system discovers unresolved imports, generates stub modules, and tracks recovery progress via a manifest.
+
+### Quick Start
+
+```bash
+bun run reconstruct:hydrate   # Generate stubs + manifest + macros
+bun run reconstruct:scan      # Re-scan to verify 0 unresolved imports
+bun run reconstruct:verify    # Validate config + reports
+```
+
+### How It Works
+
+1. **Pre-scan**: Runs `reconstruct:scan` to discover all unresolved imports.
+2. **Recovery check**: Looks for manually placed source files in `reconstruction/sources/` (accepted kinds: `npm-tarball`, `public-repo`, `manual-adapted`).
+3. **Stub generation**: For each unresolved module without a recovery source, generates a stub that:
+   - Compiles successfully (preserves expected export names/signatures from callsite analysis)
+   - Throws with actionable error text at runtime
+   - Includes a provenance header (`source`, `module`, `status`, `retrievedAt`, `transform`)
+4. **Manifest**: Writes `reconstruction/manifest.json` with per-module entries (`modulePath`, `status`, `sourceKind`, `sourceRef`, `hash`, `updatedAt`, `owner`).
+5. **Post-scan**: Re-runs the scanner and writes `reconstruction/reports/hydration-delta.json` comparing pre/post state.
+6. **Baseline**: The manifest's `unresolvedRuntimeBaseline` array enables `reconstruct:scan` to detect newly introduced unresolved imports.
+
+### Replacing Stubs with Recovered Implementations
+
+To replace a stub with a recovered implementation:
+
+1. Place the recovered file in `reconstruction/sources/<module-path>` (e.g., `reconstruction/sources/server/server.ts`).
+2. Delete the existing stub at the module path.
+3. Run `bun run reconstruct:hydrate` — it will write the recovered file and update the manifest with `status: recovered_adapted`.

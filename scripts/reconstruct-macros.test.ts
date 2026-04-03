@@ -44,6 +44,17 @@ describe('parseAndValidateConfig', () => {
     )
   })
 
+  test('rejects non-ISO generatedAt', () => {
+    const config = {
+      ...makeValidConfig(),
+      generatedAt: 'not-a-date',
+    }
+
+    expect(() => parseAndValidateConfig(config)).toThrow(
+      'reconstruction/macros.json generatedAt must be an ISO-8601 date string',
+    )
+  })
+
   test('rejects unknown macro keys', () => {
     const config = makeValidConfig() as MacroConfig & {
       macros: Record<string, unknown>
@@ -54,7 +65,7 @@ describe('parseAndValidateConfig', () => {
     }
 
     expect(() => parseAndValidateConfig(config)).toThrow(
-      'macros has unknown key: EXTRA_MACRO',
+      'reconstruction/macros.json macros has unknown key: EXTRA_MACRO',
     )
   })
 
@@ -65,7 +76,7 @@ describe('parseAndValidateConfig', () => {
     delete config.macros.VERSION
 
     expect(() => parseAndValidateConfig(config)).toThrow(
-      'macros is missing required key: VERSION',
+      'reconstruction/macros.json macros is missing required key: VERSION',
     )
   })
 })

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "generatedAt": "2026-04-03T16:29:28.385Z",
+  "status": "ok",
+  "filesScanned": 2037,
+  "importReferencesScanned": 16911,
+  "runtimeMisses": 0,
+  "typeMisses": 0,
+  "recoverableRuntimeMisses": 0,
+  "nonRecoverableRuntimeMisses": 0,
+  "baseline": {
+    "enabled": true,
+    "manifestPath": "reconstruction/manifest.json",
+    "knownImportKeys": 182,
+    "knownModulePaths": 165,
+    "newRuntimeMisses": []
+  }
+}

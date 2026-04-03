@@ -29,10 +29,10 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
       - [x] **1.3.2.4** Add a `reconstruct:macros` substep or include macro generation in `reconstruct:hydrate`.
       - [x] **1.3.2.5** Add automated tests for macro config validation and generated artifact output.
       - [x] **1.3.2.6** Validate generated macro artifacts and fast-path version output at runtime.
-  - [ ] **1.4** Add public interfaces: `reconstruction/features.json` and `reconstruction/macros.json` as the source of truth for local feature flags and macro constants.
-    - [ ] **1.4.1** Define a stable schema section at top of each file (`version`, `generatedAt`, `notes`).
-    - [ ] **1.4.2** Add JSON schema validation in reconstruction scripts and fail on unknown keys.
-    - [ ] **1.4.3** Document edit policy: only these files are hand-edited; generated outputs are not.
+  - [x] **1.4** Add public interfaces: `reconstruction/features.json` and `reconstruction/macros.json` as the source of truth for local feature flags and macro constants.
+    - [x] **1.4.1** Define a stable schema section at top of each file (`version`, `generatedAt`, `notes`).
+    - [x] **1.4.2** Add JSON schema validation in reconstruction scripts and fail on unknown keys.
+    - [x] **1.4.3** Document edit policy: only these files are hand-edited; generated outputs are not.
 
 - [ ] **2. Automate missing-module discovery and recovery**
   - [x] **2.1** Add `scripts/reconstruct-scan` to produce unresolved runtime imports, unresolved type imports, and recoverable vs non-recoverable targets.
@@ -41,16 +41,16 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
     - [x] **2.1.3** Separate `import type` misses from runtime misses.
     - [x] **2.1.4** Emit machine-readable reports to `reconstruction/reports/` (`unresolved-runtime.json`, `unresolved-types.json`, `scan-summary.json`).
     - [x] **2.1.5** Exit non-zero when newly missing runtime imports are introduced vs manifest baseline.
-  - [ ] **2.2** Add `scripts/reconstruct-hydrate` to ingest public artifacts, generate recoverable files, and generate explicit stub modules for non-recoverable files (with TODO headers and provenance tags).
-    - [ ] **2.2.1** Define source inputs directory (`reconstruction/sources/`) and accepted source kinds (`npm-tarball`, `public-repo`, `manual-adapted`).
-    - [ ] **2.2.2** For recoverable targets, write recovered modules with provenance header including source URL/ref and commit/tag.
-    - [ ] **2.2.3** For non-recoverable targets, generate stubs that compile and fail explicitly at runtime with actionable error text.
-    - [ ] **2.2.4** Ensure stubs preserve exported symbol names/signatures expected by callsites.
-    - [ ] **2.2.5** Re-run scan after hydrate and write post-hydration delta report.
-  - [ ] **2.3** Persist all outcomes in `reconstruction/manifest.json` with per-module status: `recovered_exact`, `recovered_adapted`, `stubbed`.
-    - [ ] **2.3.1** Include fields: `modulePath`, `status`, `sourceKind`, `sourceRef`, `hash`, `updatedAt`, `owner`.
-    - [ ] **2.3.2** Keep manifest updates idempotent and deterministic ordering by `modulePath`.
-    - [ ] **2.3.3** Add validation that every unresolved import in scan output has a manifest entry.
+  - [x] **2.2** Add `scripts/reconstruct-hydrate` to ingest public artifacts, generate recoverable files, and generate explicit stub modules for non-recoverable files (with TODO headers and provenance tags).
+    - [x] **2.2.1** Define source inputs directory (`reconstruction/sources/`) and accepted source kinds (`npm-tarball`, `public-repo`, `manual-adapted`).
+    - [x] **2.2.2** For recoverable targets, write recovered modules with provenance header including source URL/ref and commit/tag.
+    - [x] **2.2.3** For non-recoverable targets, generate stubs that compile and fail explicitly at runtime with actionable error text.
+    - [x] **2.2.4** Ensure stubs preserve exported symbol names/signatures expected by callsites.
+    - [x] **2.2.5** Re-run scan after hydrate and write post-hydration delta report.
+  - [x] **2.3** Persist all outcomes in `reconstruction/manifest.json` with per-module status: `recovered_exact`, `recovered_adapted`, `stubbed`.
+    - [x] **2.3.1** Include fields: `modulePath`, `status`, `sourceKind`, `sourceRef`, `hash`, `updatedAt`, `owner`.
+    - [x] **2.3.2** Keep manifest updates idempotent and deterministic ordering by `modulePath`.
+    - [x] **2.3.3** Add validation that every unresolved import in scan output has a manifest entry.
 
 - [ ] **3. Recover high-impact missing surfaces first (critical path)**
   - [ ] **3.1** Prioritize recovery/stubbing for modules blocking startup and REPL flow.

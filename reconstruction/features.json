@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generatedAt": "2026-04-03T14:49:18.737192Z",
-  "notes": "Local reconstruction feature map. Unknown feature names default to false in reconstruction/feature.ts.",
+  "notes": "Hand-edit this file as source-of-truth for feature flags. Do not hand-edit generated outputs under reconstruction/generated/.",
   "flags": {
     "ABLATION_BASELINE": false,
     "AGENT_MEMORY_SNAPSHOT": false,
