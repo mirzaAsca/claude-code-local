@@ -12,10 +12,10 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
     - [x] **1.1.3** Add minimum scripts needed for iteration: `dev`, `build`, `typecheck`, `reconstruct:scan`, `reconstruct:hydrate`, `reconstruct:verify`.
     - [x] **1.1.4** Add `tsconfig.json` configured for ESM + `.js` import specifiers from TS source (`moduleResolution: bundler`, `allowJs: false`, `checkJs: false`, `baseUrl: "."`).
     - [x] **1.1.5** Add a bootstrap compile check command (`bunx tsc --noEmit`) and document expected baseline failures before hydration.
-  - [ ] **1.2** Define `src/*` alias mapping to this repository root (current files import `src/...` heavily).
-    - [ ] **1.2.1** Add `paths` mapping in `tsconfig.json`: `"src/*": ["./*"]`.
-    - [ ] **1.2.2** Add Bun runtime alias handling (or equivalent bundler resolution) so `src/*` works both in type-check and runtime entrypoints.
-    - [ ] **1.2.3** Verify key entrypoints resolve through alias: `entrypoints/cli.tsx`, `main.tsx`, `cli/print.ts`, `QueryEngine.ts`.
+  - [x] **1.2** Define `src/*` alias mapping to this repository root (current files import `src/...` heavily).
+    - [x] **1.2.1** Add `paths` mapping in `tsconfig.json`: `"src/*": ["./*"]`.
+    - [x] **1.2.2** Add Bun runtime alias handling (or equivalent bundler resolution) so `src/*` works both in type-check and runtime entrypoints.
+    - [x] **1.2.3** Verify key entrypoints resolve through alias: `entrypoints/cli.tsx`, `main.tsx`, `cli/print.ts`, `QueryEngine.ts`.
   - [x] **1.3** Add a local feature/macro compatibility layer.
     - [x] **1.3.1** Replace `bun:bundle` feature usage at runtime with a local `feature()` shim that reads a checked-in feature map.
       - [x] **1.3.1.1** Add `reconstruction/features.json` with explicit `true|false` flags.

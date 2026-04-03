@@ -10,6 +10,7 @@
     "test": "bun test",
     "typecheck": "bunx tsc --noEmit",
     "reconstruct:scan": "bun run scripts/reconstruct-scan.ts",
+    "reconstruct:alias": "bun run scripts/reconstruct-alias.ts",
     "reconstruct:macros": "bun run scripts/reconstruct-macros.ts",
     "reconstruct:hydrate": "bun run scripts/reconstruct-hydrate.ts && bun run reconstruct:macros",
     "reconstruct:verify": "bun run scripts/reconstruct-verify.ts"
