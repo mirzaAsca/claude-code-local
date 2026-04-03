@@ -1,0 +1,133 @@
+package	files	imports	sample_files
+react	642	1151	services/claudeAiLimitsHook.ts, services/mcpServerApproval.tsx, services/mcp/MCPConnectionManager.tsx
+path	252	258	projectOnboardingState.ts, services/analytics/metadata.ts, services/analytics/firstPartyEventLoggingExporter.ts
+bun:bundle	196	196	services/analytics/metadata.ts, services/teamMemorySync/teamMemSecretGuard.ts, services/teamMemorySync/watcher.ts
+fs	169	202	services/analytics/firstPartyEventLoggingExporter.ts, services/teamMemorySync/index.ts, services/teamMemorySync/watcher.ts
+zod	128	128	services/teamMemorySync/types.ts, services/api/bootstrap.ts, services/settingsSync/types.ts
+crypto	117	127	remote/remotePermissionBridge.ts, remote/SessionsWebSocket.ts, services/analytics/firstPartyEventLogger.ts
+@anthropic-ai/sdk	116	135	services/api/logging.ts, services/api/claude.ts, services/api/client.ts
+lodash-es	107	124	projectOnboardingState.ts, services/analytics/growthbook.ts, services/analytics/metadata.ts
+figures	89	89	services/diagnosticTracking.ts, services/plugins/pluginCliCommands.ts, commands/sandbox-toggle/index.ts
+axios	59	62	services/analytics/firstPartyEventLoggingExporter.ts, services/analytics/datadog.ts, services/teamMemorySync/index.ts
+os	59	59	screens/REPL.tsx, commands/copy/copy.tsx, commands/terminalSetup/terminalSetup.tsx
+chalk	47	47	services/tips/tipRegistry.ts, cost-tracker.ts, commands/tag/tag.tsx
+@modelcontextprotocol/sdk	25	44	services/mcp/auth.ts, services/mcp/SdkControlTransport.ts, services/mcp/xaa.ts
+child_process	24	25	services/voice.ts, services/lsp/LSPClient.ts, services/preventSleep.ts
+diff	19	19	services/api/promptCacheBreakDetection.ts, native-ts/color-diff/index.ts, hooks/useDiffData.ts
+url	17	17	services/mcp/auth.ts, services/mcp/xaaIdpLogin.ts, services/lsp/passiveFeedback.ts
+execa	16	16	commands/remote-setup/remote-setup.tsx, commands/thinkback/thinkback.tsx, utils/auth.ts
+usehooks-ts	14	14	hooks/useInboxPoller.ts, hooks/usePasteHandler.ts, hooks/useMemoryUsage.ts
+strip-ansi	12	12	QueryEngine.ts, hooks/useTextInput.ts, ink/stringWidth.ts
+@opentelemetry/api	10	10	services/analytics/firstPartyEventLoggingExporter.ts, entrypoints/init.ts, utils/telemetry/betaSessionTracing.ts
+@ant/computer-use-mcp	7	10	utils/computerUse/wrapper.tsx, utils/computerUse/gates.ts, utils/computerUse/hostAdapter.ts
+util	7	7	utils/getWorktreePathsPortable.ts, ink/ink.tsx, components/CustomSelect/use-multi-select-state.ts
+ws	6	8	remote/SessionsWebSocket.ts, services/voiceStreamSTT.ts, services/mcp/client.ts
+http	6	7	services/voiceStreamSTT.ts, services/mcp/auth.ts, services/mcp/oauthPort.ts
+stream	6	6	cli/remoteIO.ts, ink/root.ts, utils/staticRender.tsx
+semver	5	8	hooks/useUpdateNotification.ts, utils/semver.ts, ink/terminal.ts
+chokidar	5	6	utils/cronScheduler.ts, keybindings/loadUserBindings.ts, utils/skills/skillChangeDetector.ts
+@alcalzone/ansi-tokenize	5	5	ink/screen.ts, utils/textHighlighting.ts, ink/output.ts
+async_hooks	5	5	utils/workloadContext.ts, utils/agentContext.ts, utils/telemetry/sessionTracing.ts
+ignore	5	5	skills/loadSkillsDir.ts, hooks/fileSuggestions.ts, utils/claudemd.ts
+lru-cache	5	5	services/lsp/LSPDiagnosticRegistry.ts, utils/memoize.ts, utils/fileStateCache.ts
+marked	5	5	commands/copy/copy.tsx, utils/claudemd.ts, components/Markdown.tsx
+qrcode	5	5	commands/session/session.tsx, commands/mobile/mobile.tsx, bridge/bridgeUI.ts
+react-reconciler	4	5	ink/render-to-screen.ts, ink/reconciler.ts, ink/ink.tsx
+@ant/claude-for-chrome-mcp	4	4	services/mcp/client.ts, skills/bundled/claudeInChrome.ts, utils/claudeInChrome/setup.ts
+@opentelemetry/sdk-logs	4	4	services/analytics/firstPartyEventLogger.ts, services/analytics/firstPartyEventLoggingExporter.ts, utils/telemetry/instrumentation.ts
+net	4	4	services/oauth/auth-code-listener.ts, utils/ide.ts, utils/hooks/ssrfGuard.ts
+process	4	4	cli/handlers/util.tsx, cli/handlers/mcp.tsx, cli/print.ts
+type-fest	4	4	types/hooks.ts, ink/components/Button.tsx, ink/components/ScrollBox.tsx
+@commander-js/extra-typings	3	3	commands/mcp/addCommand.ts, commands/mcp/xaaIdpCommand.ts, main.tsx
+@opentelemetry/api-logs	3	3	services/analytics/firstPartyEventLogger.ts, utils/telemetry/instrumentation.ts, bootstrap/state.ts
+@opentelemetry/sdk-metrics	3	3	utils/telemetry/instrumentation.ts, utils/telemetry/bigqueryExporter.ts, bootstrap/state.ts
+buffer	3	3	ink/parse-keypress.ts, ink/termio/osc.ts, tools/FileReadTool/imageProcessor.ts
+fuse.js	3	3	hooks/unifiedSuggestions.ts, utils/suggestions/commandSuggestions.ts, components/LogSelector.tsx
+vscode-languageserver-protocol	3	3	services/lsp/passiveFeedback.ts, services/lsp/LSPClient.ts, services/lsp/LSPServerInstance.ts
+undici	2	6	utils/proxy.ts, utils/mtls.ts
+highlight.js	2	5	native-ts/color-diff/index.ts, utils/cliHighlight.ts
+@anthropic-ai/mcpb	2	4	utils/plugins/mcpbHandler.ts, utils/dxt/helpers.ts
+@aws-sdk/client-bedrock-runtime	2	3	services/tokenEstimation.ts, utils/model/bedrock.ts
+@smithy/node-http-handler	2	3	utils/proxy.ts, utils/model/bedrock.ts
+google-auth-library	2	3	services/api/client.ts, utils/auth.ts
+image-processor-napi	2	3	utils/imagePaste.ts, tools/FileReadTool/imageProcessor.ts
+readline	2	3	bridge/bridgeMain.ts, bridge/sessionRunner.ts
+sharp	2	3	tools/FileReadTool/imageProcessor.ts, tools/FileReadTool/FileReadTool.ts
+shell-quote	2	3	utils/bash/commands.ts, utils/bash/shellQuote.ts
+tls	2	3	utils/mtls.ts, utils/caCerts.ts
+@opentelemetry/core	2	2	services/analytics/firstPartyEventLoggingExporter.ts, utils/telemetry/bigqueryExporter.ts
+@opentelemetry/resources	2	2	services/analytics/firstPartyEventLogger.ts, utils/telemetry/instrumentation.ts
+@opentelemetry/sdk-trace-base	2	2	utils/telemetry/instrumentation.ts, bootstrap/state.ts
+@opentelemetry/semantic-conventions	2	2	services/analytics/firstPartyEventLogger.ts, utils/telemetry/instrumentation.ts
+dns	2	2	utils/proxy.ts, utils/hooks/ssrfGuard.ts
+events	2	2	ink/events/emitter.ts, utils/abortController.ts
+fflate	2	2	utils/plugins/zipCache.ts, utils/dxt/zip.ts
+https-proxy-agent	2	2	utils/telemetry/instrumentation.ts, utils/proxy.ts
+p-map	2	2	services/mcp/client.ts, cli/handlers/mcp.tsx
+signal-exit	2	2	ink/ink.tsx, utils/gracefulShutdown.ts
+vscode-languageserver-types	2	2	tools/LSPTool/formatters.ts, tools/LSPTool/LSPTool.ts
+xss	2	2	services/mcp/auth.ts, services/mcp/xaaIdpLogin.ts
+@aws-sdk/client-bedrock	1	3	utils/model/bedrock.ts
+cli-highlight	1	3	utils/cliHighlight.ts
+proper-lockfile	1	3	utils/lockfile.ts
+@ant/computer-use-input	1	2	utils/computerUse/inputLoader.ts
+@ant/computer-use-swift	1	2	utils/computerUse/swiftLoader.ts
+@anthropic-ai/sandbox-runtime	1	2	utils/sandbox/sandbox-adapter.ts
+@opentelemetry/exporter-logs-otlp-http	1	2	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-trace-otlp-http	1	2	utils/telemetry/instrumentation.ts
+@smithy/core	1	2	utils/model/bedrock.ts
+audio-capture-napi	1	2	services/voice.ts
+bun:ffi	1	2	upstreamproxy/upstreamproxy.ts
+https	1	2	utils/mtls.ts
+modifiers-napi	1	2	utils/modifiers.ts
+perf_hooks	1	2	utils/profilerBase.ts
+turndown	1	2	tools/WebFetchTool/utils.ts
+yaml	1	2	utils/yaml.ts
+@anthropic-ai/bedrock-sdk	1	1	services/api/client.ts
+@anthropic-ai/claude-agent-sdk	1	1	cli/print.ts
+@anthropic-ai/foundry-sdk	1	1	services/api/client.ts
+@anthropic-ai/vertex-sdk	1	1	services/api/client.ts
+@aws-sdk/client-sts	1	1	utils/aws.ts
+@aws-sdk/credential-provider-node	1	1	utils/proxy.ts
+@aws-sdk/credential-providers	1	1	utils/aws.ts
+@azure/identity	1	1	services/api/client.ts
+@growthbook/growthbook	1	1	services/analytics/growthbook.ts
+@opentelemetry/exporter-logs-otlp-grpc	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-logs-otlp-proto	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-metrics-otlp-grpc	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-metrics-otlp-http	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-metrics-otlp-proto	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-prometheus	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-trace-otlp-grpc	1	1	utils/telemetry/instrumentation.ts
+@opentelemetry/exporter-trace-otlp-proto	1	1	utils/telemetry/instrumentation.ts
+ajv	1	1	tools/SyntheticOutputTool/SyntheticOutputTool.ts
+asciichart	1	1	components/Stats.tsx
+audio-capture.node	1	1	hooks/useVoice.ts
+auto-bind	1	1	ink/ink.tsx
+bidi-js	1	1	ink/bidi.ts
+cacache	1	1	utils/cleanup.ts
+cli-boxes	1	1	ink/render-border.ts
+code-excerpt	1	1	ink/components/ErrorOverview.tsx
+color-diff-napi	1	1	components/StructuredDiff/colorDiff.ts
+emoji-regex	1	1	ink/stringWidth.ts
+env-paths	1	1	utils/cachePaths.ts
+get-east-asian-width	1	1	ink/stringWidth.ts
+indent-string	1	1	ink/render-node-to-output.ts
+ink	1	1	ink/hooks/use-input.ts
+inspector	1	1	main.tsx
+jsonc-parser	1	1	utils/json.ts
+node:net	1	1	upstreamproxy/relay.ts
+node:os	1	1	commands/install.tsx
+node:path	1	1	commands/install.tsx
+picomatch	1	1	utils/claudemd.ts
+plist	1	1	services/notifier.ts
+stack-utils	1	1	ink/components/ErrorOverview.tsx
+supports-hyperlinks	1	1	ink/supports-hyperlinks.ts
+tree-kill	1	1	utils/ShellCommand.ts
+tty	1	1	utils/renderOptions.ts
+url-handler-napi	1	1	utils/deepLink/protocolHandler.ts
+v8	1	1	utils/heapDumpService.ts
+vm	1	1	state/AppStateStore.ts
+vscode-jsonrpc	1	1	services/lsp/LSPClient.ts
+wrap-ansi	1	1	ink/wrapAnsi.ts
+zlib	1	1	utils/ansiToPng.ts

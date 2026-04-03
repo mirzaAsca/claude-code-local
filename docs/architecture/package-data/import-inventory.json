@@ -1,0 +1,3248 @@
+{
+  "files_scanned": 1884,
+  "external_packages": [
+    {
+      "name": "react",
+      "count": 1151,
+      "file_count": 642,
+      "sample_files": [
+        "services/claudeAiLimitsHook.ts",
+        "services/mcpServerApproval.tsx",
+        "services/mcp/MCPConnectionManager.tsx",
+        "services/mcp/useManageMCPConnections.ts",
+        "services/compact/compactWarningHook.ts"
+      ]
+    },
+    {
+      "name": "path",
+      "count": 258,
+      "file_count": 252,
+      "sample_files": [
+        "projectOnboardingState.ts",
+        "services/analytics/metadata.ts",
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "services/MagicDocs/prompts.ts",
+        "services/voiceKeyterms.ts"
+      ]
+    },
+    {
+      "name": "bun:bundle",
+      "count": 196,
+      "file_count": 196,
+      "sample_files": [
+        "services/analytics/metadata.ts",
+        "services/teamMemorySync/teamMemSecretGuard.ts",
+        "services/teamMemorySync/watcher.ts",
+        "services/api/logging.ts",
+        "services/api/claude.ts"
+      ]
+    },
+    {
+      "name": "fs",
+      "count": 202,
+      "file_count": 169,
+      "sample_files": [
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "services/teamMemorySync/index.ts",
+        "services/teamMemorySync/watcher.ts",
+        "services/autoDream/consolidationLock.ts",
+        "services/api/dumpPrompts.ts"
+      ]
+    },
+    {
+      "name": "zod",
+      "count": 128,
+      "file_count": 128,
+      "sample_files": [
+        "services/teamMemorySync/types.ts",
+        "services/api/bootstrap.ts",
+        "services/settingsSync/types.ts",
+        "services/mcp/channelAllowlist.ts",
+        "services/mcp/xaa.ts"
+      ]
+    },
+    {
+      "name": "crypto",
+      "count": 127,
+      "file_count": 117,
+      "sample_files": [
+        "remote/remotePermissionBridge.ts",
+        "remote/SessionsWebSocket.ts",
+        "services/analytics/firstPartyEventLogger.ts",
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "services/analytics/datadog.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/sdk",
+      "count": 135,
+      "file_count": 116,
+      "sample_files": [
+        "services/api/logging.ts",
+        "services/api/claude.ts",
+        "services/api/client.ts",
+        "services/api/dumpPrompts.ts",
+        "services/api/withRetry.ts"
+      ]
+    },
+    {
+      "name": "lodash-es",
+      "count": 124,
+      "file_count": 107,
+      "sample_files": [
+        "projectOnboardingState.ts",
+        "services/analytics/growthbook.ts",
+        "services/analytics/metadata.ts",
+        "services/analytics/firstPartyEventLogger.ts",
+        "services/analytics/datadog.ts"
+      ]
+    },
+    {
+      "name": "figures",
+      "count": 89,
+      "file_count": 89,
+      "sample_files": [
+        "services/diagnosticTracking.ts",
+        "services/plugins/pluginCliCommands.ts",
+        "commands/sandbox-toggle/index.ts",
+        "screens/REPL.tsx",
+        "screens/Doctor.tsx"
+      ]
+    },
+    {
+      "name": "axios",
+      "count": 62,
+      "file_count": 59,
+      "sample_files": [
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "services/analytics/datadog.ts",
+        "services/teamMemorySync/index.ts",
+        "services/api/bootstrap.ts",
+        "services/api/metricsOptOut.ts"
+      ]
+    },
+    {
+      "name": "os",
+      "count": 59,
+      "file_count": 59,
+      "sample_files": [
+        "screens/REPL.tsx",
+        "commands/copy/copy.tsx",
+        "commands/terminalSetup/terminalSetup.tsx",
+        "upstreamproxy/upstreamproxy.ts",
+        "constants/prompts.ts"
+      ]
+    },
+    {
+      "name": "chalk",
+      "count": 47,
+      "file_count": 47,
+      "sample_files": [
+        "services/tips/tipRegistry.ts",
+        "cost-tracker.ts",
+        "commands/tag/tag.tsx",
+        "commands/ide/ide.tsx",
+        "cli/update.ts"
+      ]
+    },
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "count": 44,
+      "file_count": 25,
+      "sample_files": [
+        "services/mcp/auth.ts",
+        "services/mcp/SdkControlTransport.ts",
+        "services/mcp/xaa.ts",
+        "services/mcp/InProcessTransport.ts",
+        "services/mcp/client.ts"
+      ]
+    },
+    {
+      "name": "child_process",
+      "count": 25,
+      "file_count": 24,
+      "sample_files": [
+        "services/voice.ts",
+        "services/lsp/LSPClient.ts",
+        "services/preventSleep.ts",
+        "screens/REPL.tsx",
+        "commands/exit/exit.tsx"
+      ]
+    },
+    {
+      "name": "diff",
+      "count": 19,
+      "file_count": 19,
+      "sample_files": [
+        "services/api/promptCacheBreakDetection.ts",
+        "native-ts/color-diff/index.ts",
+        "hooks/useDiffData.ts",
+        "hooks/useTurnDiffs.ts",
+        "components/FileEditToolUpdatedMessage.tsx"
+      ]
+    },
+    {
+      "name": "url",
+      "count": 17,
+      "file_count": 17,
+      "sample_files": [
+        "services/mcp/auth.ts",
+        "services/mcp/xaaIdpLogin.ts",
+        "services/lsp/passiveFeedback.ts",
+        "services/lsp/LSPServerInstance.ts",
+        "services/lsp/LSPServerManager.ts"
+      ]
+    },
+    {
+      "name": "execa",
+      "count": 16,
+      "file_count": 16,
+      "sample_files": [
+        "commands/remote-setup/remote-setup.tsx",
+        "commands/thinkback/thinkback.tsx",
+        "utils/auth.ts",
+        "utils/execFileNoThrow.ts",
+        "utils/user.ts"
+      ]
+    },
+    {
+      "name": "usehooks-ts",
+      "count": 14,
+      "file_count": 14,
+      "sample_files": [
+        "hooks/useInboxPoller.ts",
+        "hooks/usePasteHandler.ts",
+        "hooks/useMemoryUsage.ts",
+        "hooks/notifs/useLspInitializationNotification.tsx",
+        "hooks/useSwarmPermissionPoller.ts"
+      ]
+    },
+    {
+      "name": "strip-ansi",
+      "count": 12,
+      "file_count": 12,
+      "sample_files": [
+        "QueryEngine.ts",
+        "hooks/useTextInput.ts",
+        "ink/stringWidth.ts",
+        "utils/staticRender.tsx",
+        "components/PromptInput/PromptInput.tsx"
+      ]
+    },
+    {
+      "name": "@opentelemetry/api",
+      "count": 10,
+      "file_count": 10,
+      "sample_files": [
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "entrypoints/init.ts",
+        "utils/telemetry/betaSessionTracing.ts",
+        "utils/telemetry/instrumentation.ts",
+        "utils/telemetry/events.ts"
+      ]
+    },
+    {
+      "name": "@ant/computer-use-mcp",
+      "count": 10,
+      "file_count": 7,
+      "sample_files": [
+        "utils/computerUse/wrapper.tsx",
+        "utils/computerUse/gates.ts",
+        "utils/computerUse/hostAdapter.ts",
+        "utils/computerUse/setup.ts",
+        "utils/computerUse/mcpServer.ts"
+      ]
+    },
+    {
+      "name": "util",
+      "count": 7,
+      "file_count": 7,
+      "sample_files": [
+        "utils/getWorktreePathsPortable.ts",
+        "ink/ink.tsx",
+        "components/CustomSelect/use-multi-select-state.ts",
+        "components/CustomSelect/use-select-navigation.ts",
+        "utils/fileHistory.ts"
+      ]
+    },
+    {
+      "name": "ws",
+      "count": 8,
+      "file_count": 6,
+      "sample_files": [
+        "remote/SessionsWebSocket.ts",
+        "services/voiceStreamSTT.ts",
+        "services/mcp/client.ts",
+        "upstreamproxy/relay.ts",
+        "cli/transports/WebSocketTransport.ts"
+      ]
+    },
+    {
+      "name": "http",
+      "count": 7,
+      "file_count": 6,
+      "sample_files": [
+        "services/voiceStreamSTT.ts",
+        "services/mcp/auth.ts",
+        "services/mcp/oauthPort.ts",
+        "services/mcp/xaaIdpLogin.ts",
+        "services/oauth/auth-code-listener.ts"
+      ]
+    },
+    {
+      "name": "stream",
+      "count": 6,
+      "file_count": 6,
+      "sample_files": [
+        "cli/remoteIO.ts",
+        "ink/root.ts",
+        "utils/staticRender.tsx",
+        "ink/terminal.ts",
+        "utils/heapDumpService.ts"
+      ]
+    },
+    {
+      "name": "semver",
+      "count": 8,
+      "file_count": 5,
+      "sample_files": [
+        "hooks/useUpdateNotification.ts",
+        "utils/semver.ts",
+        "ink/terminal.ts",
+        "utils/releaseNotes.ts",
+        "utils/desktopDeepLink.ts"
+      ]
+    },
+    {
+      "name": "chokidar",
+      "count": 6,
+      "file_count": 5,
+      "sample_files": [
+        "utils/cronScheduler.ts",
+        "keybindings/loadUserBindings.ts",
+        "utils/skills/skillChangeDetector.ts",
+        "utils/settings/changeDetector.ts",
+        "utils/hooks/fileChangedWatcher.ts"
+      ]
+    },
+    {
+      "name": "@alcalzone/ansi-tokenize",
+      "count": 5,
+      "file_count": 5,
+      "sample_files": [
+        "ink/screen.ts",
+        "utils/textHighlighting.ts",
+        "ink/output.ts",
+        "ink/log-update.ts",
+        "utils/sliceAnsi.ts"
+      ]
+    },
+    {
+      "name": "async_hooks",
+      "count": 5,
+      "file_count": 5,
+      "sample_files": [
+        "utils/workloadContext.ts",
+        "utils/agentContext.ts",
+        "utils/telemetry/sessionTracing.ts",
+        "utils/cwd.ts",
+        "utils/teammateContext.ts"
+      ]
+    },
+    {
+      "name": "ignore",
+      "count": 5,
+      "file_count": 5,
+      "sample_files": [
+        "skills/loadSkillsDir.ts",
+        "hooks/fileSuggestions.ts",
+        "utils/claudemd.ts",
+        "utils/worktree.ts",
+        "utils/permissions/filesystem.ts"
+      ]
+    },
+    {
+      "name": "lru-cache",
+      "count": 5,
+      "file_count": 5,
+      "sample_files": [
+        "services/lsp/LSPDiagnosticRegistry.ts",
+        "utils/memoize.ts",
+        "utils/fileStateCache.ts",
+        "utils/suggestions/directoryCompletion.ts",
+        "tools/WebFetchTool/utils.ts"
+      ]
+    },
+    {
+      "name": "marked",
+      "count": 5,
+      "file_count": 5,
+      "sample_files": [
+        "commands/copy/copy.tsx",
+        "utils/claudemd.ts",
+        "components/Markdown.tsx",
+        "utils/markdown.ts",
+        "components/MarkdownTable.tsx"
+      ]
+    },
+    {
+      "name": "qrcode",
+      "count": 5,
+      "file_count": 5,
+      "sample_files": [
+        "commands/session/session.tsx",
+        "commands/mobile/mobile.tsx",
+        "bridge/bridgeUI.ts",
+        "commands/bridge/bridge.tsx",
+        "components/BridgeDialog.tsx"
+      ]
+    },
+    {
+      "name": "react-reconciler",
+      "count": 5,
+      "file_count": 4,
+      "sample_files": [
+        "ink/render-to-screen.ts",
+        "ink/reconciler.ts",
+        "ink/ink.tsx",
+        "ink/events/dispatcher.ts"
+      ]
+    },
+    {
+      "name": "@ant/claude-for-chrome-mcp",
+      "count": 4,
+      "file_count": 4,
+      "sample_files": [
+        "services/mcp/client.ts",
+        "skills/bundled/claudeInChrome.ts",
+        "utils/claudeInChrome/setup.ts",
+        "utils/claudeInChrome/mcpServer.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-logs",
+      "count": 4,
+      "file_count": 4,
+      "sample_files": [
+        "services/analytics/firstPartyEventLogger.ts",
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "utils/telemetry/instrumentation.ts",
+        "bootstrap/state.ts"
+      ]
+    },
+    {
+      "name": "net",
+      "count": 4,
+      "file_count": 4,
+      "sample_files": [
+        "services/oauth/auth-code-listener.ts",
+        "utils/ide.ts",
+        "utils/hooks/ssrfGuard.ts",
+        "utils/claudeInChrome/chromeNativeHost.ts"
+      ]
+    },
+    {
+      "name": "process",
+      "count": 4,
+      "file_count": 4,
+      "sample_files": [
+        "cli/handlers/util.tsx",
+        "cli/handlers/mcp.tsx",
+        "cli/print.ts",
+        "bootstrap/state.ts"
+      ]
+    },
+    {
+      "name": "type-fest",
+      "count": 4,
+      "file_count": 4,
+      "sample_files": [
+        "types/hooks.ts",
+        "ink/components/Button.tsx",
+        "ink/components/ScrollBox.tsx",
+        "ink/components/Box.tsx"
+      ]
+    },
+    {
+      "name": "@commander-js/extra-typings",
+      "count": 3,
+      "file_count": 3,
+      "sample_files": [
+        "commands/mcp/addCommand.ts",
+        "commands/mcp/xaaIdpCommand.ts",
+        "main.tsx"
+      ]
+    },
+    {
+      "name": "@opentelemetry/api-logs",
+      "count": 3,
+      "file_count": 3,
+      "sample_files": [
+        "services/analytics/firstPartyEventLogger.ts",
+        "utils/telemetry/instrumentation.ts",
+        "bootstrap/state.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-metrics",
+      "count": 3,
+      "file_count": 3,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts",
+        "utils/telemetry/bigqueryExporter.ts",
+        "bootstrap/state.ts"
+      ]
+    },
+    {
+      "name": "buffer",
+      "count": 3,
+      "file_count": 3,
+      "sample_files": [
+        "ink/parse-keypress.ts",
+        "ink/termio/osc.ts",
+        "tools/FileReadTool/imageProcessor.ts"
+      ]
+    },
+    {
+      "name": "fuse.js",
+      "count": 3,
+      "file_count": 3,
+      "sample_files": [
+        "hooks/unifiedSuggestions.ts",
+        "utils/suggestions/commandSuggestions.ts",
+        "components/LogSelector.tsx"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-protocol",
+      "count": 3,
+      "file_count": 3,
+      "sample_files": [
+        "services/lsp/passiveFeedback.ts",
+        "services/lsp/LSPClient.ts",
+        "services/lsp/LSPServerInstance.ts"
+      ]
+    },
+    {
+      "name": "undici",
+      "count": 6,
+      "file_count": 2,
+      "sample_files": [
+        "utils/proxy.ts",
+        "utils/mtls.ts"
+      ]
+    },
+    {
+      "name": "highlight.js",
+      "count": 5,
+      "file_count": 2,
+      "sample_files": [
+        "native-ts/color-diff/index.ts",
+        "utils/cliHighlight.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/mcpb",
+      "count": 4,
+      "file_count": 2,
+      "sample_files": [
+        "utils/plugins/mcpbHandler.ts",
+        "utils/dxt/helpers.ts"
+      ]
+    },
+    {
+      "name": "@aws-sdk/client-bedrock-runtime",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "services/tokenEstimation.ts",
+        "utils/model/bedrock.ts"
+      ]
+    },
+    {
+      "name": "@smithy/node-http-handler",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "utils/proxy.ts",
+        "utils/model/bedrock.ts"
+      ]
+    },
+    {
+      "name": "google-auth-library",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "services/api/client.ts",
+        "utils/auth.ts"
+      ]
+    },
+    {
+      "name": "image-processor-napi",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "utils/imagePaste.ts",
+        "tools/FileReadTool/imageProcessor.ts"
+      ]
+    },
+    {
+      "name": "readline",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "bridge/bridgeMain.ts",
+        "bridge/sessionRunner.ts"
+      ]
+    },
+    {
+      "name": "sharp",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "tools/FileReadTool/imageProcessor.ts",
+        "tools/FileReadTool/FileReadTool.ts"
+      ]
+    },
+    {
+      "name": "shell-quote",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "utils/bash/commands.ts",
+        "utils/bash/shellQuote.ts"
+      ]
+    },
+    {
+      "name": "tls",
+      "count": 3,
+      "file_count": 2,
+      "sample_files": [
+        "utils/mtls.ts",
+        "utils/caCerts.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/core",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "services/analytics/firstPartyEventLoggingExporter.ts",
+        "utils/telemetry/bigqueryExporter.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/resources",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "services/analytics/firstPartyEventLogger.ts",
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/sdk-trace-base",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts",
+        "bootstrap/state.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/semantic-conventions",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "services/analytics/firstPartyEventLogger.ts",
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "dns",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "utils/proxy.ts",
+        "utils/hooks/ssrfGuard.ts"
+      ]
+    },
+    {
+      "name": "events",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "ink/events/emitter.ts",
+        "utils/abortController.ts"
+      ]
+    },
+    {
+      "name": "fflate",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "utils/plugins/zipCache.ts",
+        "utils/dxt/zip.ts"
+      ]
+    },
+    {
+      "name": "https-proxy-agent",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts",
+        "utils/proxy.ts"
+      ]
+    },
+    {
+      "name": "p-map",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "services/mcp/client.ts",
+        "cli/handlers/mcp.tsx"
+      ]
+    },
+    {
+      "name": "signal-exit",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "ink/ink.tsx",
+        "utils/gracefulShutdown.ts"
+      ]
+    },
+    {
+      "name": "vscode-languageserver-types",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "tools/LSPTool/formatters.ts",
+        "tools/LSPTool/LSPTool.ts"
+      ]
+    },
+    {
+      "name": "xss",
+      "count": 2,
+      "file_count": 2,
+      "sample_files": [
+        "services/mcp/auth.ts",
+        "services/mcp/xaaIdpLogin.ts"
+      ]
+    },
+    {
+      "name": "@aws-sdk/client-bedrock",
+      "count": 3,
+      "file_count": 1,
+      "sample_files": [
+        "utils/model/bedrock.ts"
+      ]
+    },
+    {
+      "name": "cli-highlight",
+      "count": 3,
+      "file_count": 1,
+      "sample_files": [
+        "utils/cliHighlight.ts"
+      ]
+    },
+    {
+      "name": "proper-lockfile",
+      "count": 3,
+      "file_count": 1,
+      "sample_files": [
+        "utils/lockfile.ts"
+      ]
+    },
+    {
+      "name": "@ant/computer-use-input",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/computerUse/inputLoader.ts"
+      ]
+    },
+    {
+      "name": "@ant/computer-use-swift",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/computerUse/swiftLoader.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/sandbox-runtime",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/sandbox/sandbox-adapter.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-logs-otlp-http",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-trace-otlp-http",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@smithy/core",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/model/bedrock.ts"
+      ]
+    },
+    {
+      "name": "audio-capture-napi",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "services/voice.ts"
+      ]
+    },
+    {
+      "name": "bun:ffi",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "upstreamproxy/upstreamproxy.ts"
+      ]
+    },
+    {
+      "name": "https",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/mtls.ts"
+      ]
+    },
+    {
+      "name": "modifiers-napi",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/modifiers.ts"
+      ]
+    },
+    {
+      "name": "perf_hooks",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/profilerBase.ts"
+      ]
+    },
+    {
+      "name": "turndown",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "tools/WebFetchTool/utils.ts"
+      ]
+    },
+    {
+      "name": "yaml",
+      "count": 2,
+      "file_count": 1,
+      "sample_files": [
+        "utils/yaml.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/bedrock-sdk",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/api/client.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/claude-agent-sdk",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "cli/print.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/foundry-sdk",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/api/client.ts"
+      ]
+    },
+    {
+      "name": "@anthropic-ai/vertex-sdk",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/api/client.ts"
+      ]
+    },
+    {
+      "name": "@aws-sdk/client-sts",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/aws.ts"
+      ]
+    },
+    {
+      "name": "@aws-sdk/credential-provider-node",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/proxy.ts"
+      ]
+    },
+    {
+      "name": "@aws-sdk/credential-providers",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/aws.ts"
+      ]
+    },
+    {
+      "name": "@azure/identity",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/api/client.ts"
+      ]
+    },
+    {
+      "name": "@growthbook/growthbook",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/analytics/growthbook.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-logs-otlp-grpc",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-logs-otlp-proto",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-metrics-otlp-grpc",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-metrics-otlp-http",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-metrics-otlp-proto",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-prometheus",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-trace-otlp-grpc",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "@opentelemetry/exporter-trace-otlp-proto",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/telemetry/instrumentation.ts"
+      ]
+    },
+    {
+      "name": "ajv",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "tools/SyntheticOutputTool/SyntheticOutputTool.ts"
+      ]
+    },
+    {
+      "name": "asciichart",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "components/Stats.tsx"
+      ]
+    },
+    {
+      "name": "audio-capture.node",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "hooks/useVoice.ts"
+      ]
+    },
+    {
+      "name": "auto-bind",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/ink.tsx"
+      ]
+    },
+    {
+      "name": "bidi-js",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/bidi.ts"
+      ]
+    },
+    {
+      "name": "cacache",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/cleanup.ts"
+      ]
+    },
+    {
+      "name": "cli-boxes",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/render-border.ts"
+      ]
+    },
+    {
+      "name": "code-excerpt",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/components/ErrorOverview.tsx"
+      ]
+    },
+    {
+      "name": "color-diff-napi",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "components/StructuredDiff/colorDiff.ts"
+      ]
+    },
+    {
+      "name": "emoji-regex",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/stringWidth.ts"
+      ]
+    },
+    {
+      "name": "env-paths",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/cachePaths.ts"
+      ]
+    },
+    {
+      "name": "get-east-asian-width",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/stringWidth.ts"
+      ]
+    },
+    {
+      "name": "indent-string",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/render-node-to-output.ts"
+      ]
+    },
+    {
+      "name": "ink",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/hooks/use-input.ts"
+      ]
+    },
+    {
+      "name": "inspector",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "main.tsx"
+      ]
+    },
+    {
+      "name": "jsonc-parser",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/json.ts"
+      ]
+    },
+    {
+      "name": "node:net",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "upstreamproxy/relay.ts"
+      ]
+    },
+    {
+      "name": "node:os",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "commands/install.tsx"
+      ]
+    },
+    {
+      "name": "node:path",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "commands/install.tsx"
+      ]
+    },
+    {
+      "name": "picomatch",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/claudemd.ts"
+      ]
+    },
+    {
+      "name": "plist",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/notifier.ts"
+      ]
+    },
+    {
+      "name": "stack-utils",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/components/ErrorOverview.tsx"
+      ]
+    },
+    {
+      "name": "supports-hyperlinks",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/supports-hyperlinks.ts"
+      ]
+    },
+    {
+      "name": "tree-kill",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/ShellCommand.ts"
+      ]
+    },
+    {
+      "name": "tty",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/renderOptions.ts"
+      ]
+    },
+    {
+      "name": "url-handler-napi",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/deepLink/protocolHandler.ts"
+      ]
+    },
+    {
+      "name": "v8",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/heapDumpService.ts"
+      ]
+    },
+    {
+      "name": "vm",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "state/AppStateStore.ts"
+      ]
+    },
+    {
+      "name": "vscode-jsonrpc",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "services/lsp/LSPClient.ts"
+      ]
+    },
+    {
+      "name": "wrap-ansi",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "ink/wrapAnsi.ts"
+      ]
+    },
+    {
+      "name": "zlib",
+      "count": 1,
+      "file_count": 1,
+      "sample_files": [
+        "utils/ansiToPng.ts"
+      ]
+    }
+  ],
+  "internal_import_roots": [
+    {
+      "name": "../../ink.js",
+      "count": 240,
+      "file_count": 239
+    },
+    {
+      "name": "../ink.js",
+      "count": 145,
+      "file_count": 142
+    },
+    {
+      "name": "../../Tool.js",
+      "count": 165,
+      "file_count": 139
+    },
+    {
+      "name": "../../commands.js",
+      "count": 127,
+      "file_count": 127
+    },
+    {
+      "name": "../../bootstrap/state.js",
+      "count": 127,
+      "file_count": 125
+    },
+    {
+      "name": "./types.js",
+      "count": 107,
+      "file_count": 102
+    },
+    {
+      "name": "src/services/analytics/index.js",
+      "count": 98,
+      "file_count": 96
+    },
+    {
+      "name": "../debug.js",
+      "count": 96,
+      "file_count": 96
+    },
+    {
+      "name": "../../utils/errors.js",
+      "count": 95,
+      "file_count": 95
+    },
+    {
+      "name": "../bootstrap/state.js",
+      "count": 92,
+      "file_count": 87
+    },
+    {
+      "name": "../../utils/log.js",
+      "count": 87,
+      "file_count": 87
+    },
+    {
+      "name": "../../utils/debug.js",
+      "count": 85,
+      "file_count": 85
+    },
+    {
+      "name": "./debug.js",
+      "count": 83,
+      "file_count": 82
+    },
+    {
+      "name": "../../types/message.js",
+      "count": 81,
+      "file_count": 81
+    },
+    {
+      "name": "../../utils/slowOperations.js",
+      "count": 80,
+      "file_count": 80
+    },
+    {
+      "name": "../../services/analytics/index.js",
+      "count": 78,
+      "file_count": 77
+    },
+    {
+      "name": "../utils/debug.js",
+      "count": 73,
+      "file_count": 73
+    },
+    {
+      "name": "../types/message.js",
+      "count": 71,
+      "file_count": 71
+    },
+    {
+      "name": "./envUtils.js",
+      "count": 69,
+      "file_count": 69
+    },
+    {
+      "name": "../../utils/envUtils.js",
+      "count": 69,
+      "file_count": 68
+    },
+    {
+      "name": "../../state/AppState.js",
+      "count": 64,
+      "file_count": 64
+    },
+    {
+      "name": "../../types/command.js",
+      "count": 61,
+      "file_count": 61
+    },
+    {
+      "name": "../../utils/lazySchema.js",
+      "count": 58,
+      "file_count": 58
+    },
+    {
+      "name": "../../utils/messages.js",
+      "count": 57,
+      "file_count": 57
+    },
+    {
+      "name": "../errors.js",
+      "count": 57,
+      "file_count": 57
+    },
+    {
+      "name": "../utils/config.js",
+      "count": 61,
+      "file_count": 54
+    },
+    {
+      "name": "../../utils/config.js",
+      "count": 56,
+      "file_count": 54
+    },
+    {
+      "name": "../services/analytics/index.js",
+      "count": 53,
+      "file_count": 53
+    },
+    {
+      "name": "../state/AppState.js",
+      "count": 51,
+      "file_count": 51
+    },
+    {
+      "name": "../../keybindings/useKeybinding.js",
+      "count": 50,
+      "file_count": 50
+    },
+    {
+      "name": "../../utils/format.js",
+      "count": 50,
+      "file_count": 50
+    },
+    {
+      "name": "../../utils/stringUtils.js",
+      "count": 49,
+      "file_count": 49
+    },
+    {
+      "name": "./errors.js",
+      "count": 49,
+      "file_count": 48
+    },
+    {
+      "name": "./log.js",
+      "count": 48,
+      "file_count": 48
+    },
+    {
+      "name": "../../utils/auth.js",
+      "count": 45,
+      "file_count": 45
+    },
+    {
+      "name": "../slowOperations.js",
+      "count": 45,
+      "file_count": 45
+    },
+    {
+      "name": "./slowOperations.js",
+      "count": 46,
+      "file_count": 43
+    },
+    {
+      "name": "../../services/analytics/growthbook.js",
+      "count": 43,
+      "file_count": 43
+    },
+    {
+      "name": "../services/analytics/growthbook.js",
+      "count": 43,
+      "file_count": 43
+    },
+    {
+      "name": "../Tool.js",
+      "count": 47,
+      "file_count": 41
+    },
+    {
+      "name": "../log.js",
+      "count": 41,
+      "file_count": 41
+    },
+    {
+      "name": "../utils/errors.js",
+      "count": 41,
+      "file_count": 41
+    },
+    {
+      "name": "./prompt.js",
+      "count": 41,
+      "file_count": 41
+    },
+    {
+      "name": "./fsOperations.js",
+      "count": 38,
+      "file_count": 38
+    },
+    {
+      "name": "../../utils/theme.js",
+      "count": 37,
+      "file_count": 37
+    },
+    {
+      "name": "../utils/settings/settings.js",
+      "count": 37,
+      "file_count": 37
+    },
+    {
+      "name": "./config.js",
+      "count": 37,
+      "file_count": 36
+    },
+    {
+      "name": "../../utils/cwd.js",
+      "count": 36,
+      "file_count": 36
+    },
+    {
+      "name": "../utils/log.js",
+      "count": 36,
+      "file_count": 36
+    },
+    {
+      "name": "../commands.js",
+      "count": 38,
+      "file_count": 35
+    },
+    {
+      "name": "../../../ink.js",
+      "count": 35,
+      "file_count": 35
+    },
+    {
+      "name": "../envUtils.js",
+      "count": 34,
+      "file_count": 34
+    },
+    {
+      "name": "../utils/envUtils.js",
+      "count": 34,
+      "file_count": 34
+    },
+    {
+      "name": "src/entrypoints/agentSdkTypes.js",
+      "count": 35,
+      "file_count": 33
+    },
+    {
+      "name": "../../utils/settings/settings.js",
+      "count": 33,
+      "file_count": 33
+    },
+    {
+      "name": "./constants.js",
+      "count": 33,
+      "file_count": 32
+    },
+    {
+      "name": "../../hooks/useTerminalSize.js",
+      "count": 31,
+      "file_count": 31
+    },
+    {
+      "name": "../settings/settings.js",
+      "count": 31,
+      "file_count": 31
+    },
+    {
+      "name": "../utils/slowOperations.js",
+      "count": 30,
+      "file_count": 30
+    },
+    {
+      "name": "./UI.js",
+      "count": 30,
+      "file_count": 30
+    },
+    {
+      "name": "../../utils/permissions/PermissionResult.js",
+      "count": 30,
+      "file_count": 29
+    },
+    {
+      "name": "../keybindings/useKeybinding.js",
+      "count": 29,
+      "file_count": 29
+    },
+    {
+      "name": "./utils.js",
+      "count": 29,
+      "file_count": 29
+    },
+    {
+      "name": "src/bootstrap/state.js",
+      "count": 29,
+      "file_count": 28
+    },
+    {
+      "name": "../../utils/file.js",
+      "count": 28,
+      "file_count": 28
+    },
+    {
+      "name": "../analytics/index.js",
+      "count": 28,
+      "file_count": 28
+    },
+    {
+      "name": "../fsOperations.js",
+      "count": 28,
+      "file_count": 28
+    },
+    {
+      "name": "../../utils/array.js",
+      "count": 27,
+      "file_count": 27
+    },
+    {
+      "name": "./design-system/Dialog.js",
+      "count": 26,
+      "file_count": 26
+    },
+    {
+      "name": "../utils/format.js",
+      "count": 25,
+      "file_count": 25
+    },
+    {
+      "name": "../utils/messages.js",
+      "count": 25,
+      "file_count": 25
+    },
+    {
+      "name": "./execFileNoThrow.js",
+      "count": 25,
+      "file_count": 25
+    },
+    {
+      "name": "src/state/AppState.js",
+      "count": 25,
+      "file_count": 25
+    },
+    {
+      "name": "../../utils/model/model.js",
+      "count": 25,
+      "file_count": 24
+    },
+    {
+      "name": "../../utils/sessionStorage.js",
+      "count": 25,
+      "file_count": 24
+    },
+    {
+      "name": "../services/mcp/types.js",
+      "count": 25,
+      "file_count": 24
+    },
+    {
+      "name": "../../components/MessageResponse.js",
+      "count": 24,
+      "file_count": 24
+    },
+    {
+      "name": "../../constants/oauth.js",
+      "count": 24,
+      "file_count": 24
+    },
+    {
+      "name": "../design-system/Dialog.js",
+      "count": 24,
+      "file_count": 24
+    },
+    {
+      "name": "../../types/plugin.js",
+      "count": 23,
+      "file_count": 22
+    },
+    {
+      "name": "../../ink/stringWidth.js",
+      "count": 22,
+      "file_count": 22
+    },
+    {
+      "name": "./schemas.js",
+      "count": 22,
+      "file_count": 22
+    },
+    {
+      "name": "./settings/settings.js",
+      "count": 22,
+      "file_count": 22
+    },
+    {
+      "name": "src/utils/debug.js",
+      "count": 22,
+      "file_count": 22
+    },
+    {
+      "name": "../utils/auth.js",
+      "count": 26,
+      "file_count": 21
+    },
+    {
+      "name": "../../constants/figures.js",
+      "count": 21,
+      "file_count": 21
+    },
+    {
+      "name": "../../ink/events/keyboard-event.js",
+      "count": 21,
+      "file_count": 21
+    },
+    {
+      "name": "../design-system/Byline.js",
+      "count": 21,
+      "file_count": 21
+    },
+    {
+      "name": "./cwd.js",
+      "count": 21,
+      "file_count": 21
+    },
+    {
+      "name": "./messages.js",
+      "count": 21,
+      "file_count": 21
+    },
+    {
+      "name": "../tools/AgentTool/loadAgentsDir.js",
+      "count": 29,
+      "file_count": 20
+    },
+    {
+      "name": "../../tools/AgentTool/loadAgentsDir.js",
+      "count": 21,
+      "file_count": 20
+    },
+    {
+      "name": "../hooks/useTerminalSize.js",
+      "count": 20,
+      "file_count": 20
+    },
+    {
+      "name": "../utils/model/model.js",
+      "count": 20,
+      "file_count": 20
+    },
+    {
+      "name": "./CustomSelect/index.js",
+      "count": 20,
+      "file_count": 20
+    },
+    {
+      "name": "src/types/message.js",
+      "count": 20,
+      "file_count": 20
+    },
+    {
+      "name": "../../services/mcp/types.js",
+      "count": 19,
+      "file_count": 19
+    },
+    {
+      "name": "../../utils/browser.js",
+      "count": 19,
+      "file_count": 19
+    },
+    {
+      "name": "../../utils/platform.js",
+      "count": 19,
+      "file_count": 19
+    },
+    {
+      "name": "../ink/stringWidth.js",
+      "count": 19,
+      "file_count": 19
+    },
+    {
+      "name": "src/services/analytics/growthbook.js",
+      "count": 19,
+      "file_count": 19
+    },
+    {
+      "name": "../../constants/xml.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "../../utils/fsOperations.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "../../utils/sleep.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "../config.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "../lazySchema.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "./model/model.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "./platform.js",
+      "count": 18,
+      "file_count": 18
+    },
+    {
+      "name": "../../utils/sandbox/sandbox-adapter.js",
+      "count": 18,
+      "file_count": 17
+    },
+    {
+      "name": "../design-system/KeyboardShortcutHint.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "../types/textInputTypes.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "../utils/cwd.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "./design-system/KeyboardShortcutHint.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "./file.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "./sessionStorage.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "src/utils/log.js",
+      "count": 17,
+      "file_count": 17
+    },
+    {
+      "name": "../../../Tool.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../../hooks/useExitOnCtrlCDWithKeybindings.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../../types/ids.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../../types/permissions.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../../utils/agentSwarmsEnabled.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../analytics/growthbook.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../ConfigurableShortcutHint.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../CustomSelect/select.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../entrypoints/agentSdkTypes.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "src/context/notifications.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "src/utils/messages.js",
+      "count": 16,
+      "file_count": 16
+    },
+    {
+      "name": "../utils/sessionStorage.js",
+      "count": 19,
+      "file_count": 15
+    },
+    {
+      "name": "src/Tool.js",
+      "count": 17,
+      "file_count": 15
+    },
+    {
+      "name": "../types/logs.js",
+      "count": 16,
+      "file_count": 15
+    },
+    {
+      "name": "./format.js",
+      "count": 16,
+      "file_count": 15
+    },
+    {
+      "name": "../../utils/env.js",
+      "count": 15,
+      "file_count": 15
+    },
+    {
+      "name": "../../utils/permissions/filesystem.js",
+      "count": 15,
+      "file_count": 15
+    },
+    {
+      "name": "../MessageResponse.js",
+      "count": 15,
+      "file_count": 15
+    },
+    {
+      "name": "../PermissionRequest.js",
+      "count": 15,
+      "file_count": 15
+    },
+    {
+      "name": "./auth.js",
+      "count": 15,
+      "file_count": 15
+    },
+    {
+      "name": "../../Task.js",
+      "count": 18,
+      "file_count": 14
+    },
+    {
+      "name": "../settings/types.js",
+      "count": 15,
+      "file_count": 14
+    },
+    {
+      "name": "../../hooks/useCanUseTool.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../../utils/path.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../../utils/task/diskOutput.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../../utils/teammate.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../bundledSkills.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../context/notifications.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../execFileNoThrow.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../messages.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../types.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../utils/lazySchema.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../utils/theme.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "./marketplaceManager.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "src/ink.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "src/utils/auth.js",
+      "count": 14,
+      "file_count": 14
+    },
+    {
+      "name": "../../tasks/LocalAgentTask/LocalAgentTask.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "../../utils/forkedAgent.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "../../utils/git.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "../constants/figures.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "../hooks.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "../utils/stringUtils.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "./git.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "src/types/utils.js",
+      "count": 13,
+      "file_count": 13
+    },
+    {
+      "name": "../constants/oauth.js",
+      "count": 15,
+      "file_count": 12
+    },
+    {
+      "name": "../settings/constants.js",
+      "count": 14,
+      "file_count": 12
+    },
+    {
+      "name": "../utils/git.js",
+      "count": 14,
+      "file_count": 12
+    },
+    {
+      "name": "../../../wizard/index.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../../components/design-system/Dialog.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../../tools/BashTool/toolName.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../../utils/execFileNoThrow.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../../utils/systemPromptType.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../../utils/userAgent.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../cwd.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../platform.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "./cleanupRegistry.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "./ConfigurableShortcutHint.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "./design-system/Byline.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "src/utils/cwd.js",
+      "count": 12,
+      "file_count": 12
+    },
+    {
+      "name": "../../types/tools.js",
+      "count": 15,
+      "file_count": 11
+    },
+    {
+      "name": "../utils/ide.js",
+      "count": 12,
+      "file_count": 11
+    },
+    {
+      "name": "../../../ConfigurableShortcutHint.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../../../design-system/Byline.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../../../wizard/WizardDialogLayout.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../../components/FallbackToolUseErrorMessage.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../../services/analytics/metadata.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../../utils/plugins/marketplaceManager.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../../utils/teammateMailbox.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../auth.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "../utils/env.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "./dom.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "src/utils/config.js",
+      "count": 11,
+      "file_count": 11
+    },
+    {
+      "name": "./CustomSelect/select.js",
+      "count": 13,
+      "file_count": 10
+    },
+    {
+      "name": "../../CustomSelect/select.js",
+      "count": 11,
+      "file_count": 10
+    },
+    {
+      "name": "../../tools/AgentTool/agentColorManager.js",
+      "count": 11,
+      "file_count": 10
+    },
+    {
+      "name": "../../utils/permissions/PermissionMode.js",
+      "count": 11,
+      "file_count": 10
+    },
+    {
+      "name": "../../../design-system/KeyboardShortcutHint.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../../utils/permissions/PermissionUpdateSchema.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../memdir/paths.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../services/policyLimits/index.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../utils/bash/commands.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../utils/hooks.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../utils/http.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../utils/permissions/PermissionUpdateSchema.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../utils/plans.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../cleanupRegistry.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../constants/xml.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../types/command.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../types/ids.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../utils/array.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../utils/gracefulShutdown.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "./json.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "./pluginLoader.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "./theme.js",
+      "count": 10,
+      "file_count": 10
+    },
+    {
+      "name": "../../tasks/InProcessTeammateTask/types.js",
+      "count": 10,
+      "file_count": 9
+    },
+    {
+      "name": "../types/permissions.js",
+      "count": 10,
+      "file_count": 9
+    },
+    {
+      "name": "./screen.js",
+      "count": 10,
+      "file_count": 9
+    },
+    {
+      "name": "src/utils/settings/constants.js",
+      "count": 10,
+      "file_count": 9
+    },
+    {
+      "name": "../../../../ink.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../components/design-system/Byline.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../constants/querySource.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../keybindings/useShortcutDisplay.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../services/api/claude.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../tools.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../tools/FileReadTool/prompt.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/effort.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/json.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/plugins/cacheUtils.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/plugins/installedPluginsManager.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/plugins/pluginLoader.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/settings/types.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/task/framework.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../../utils/tokens.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../CustomSelect/index.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../entrypoints/sdk/controlTypes.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../git.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../keybindings/useShortcutDisplay.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../services/tokenEstimation.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../stringUtils.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../tools/BashTool/toolName.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../utils/fullscreen.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../utils/messageQueueManager.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "./diagLogs.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "./installedPluginsManager.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "./path.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "./pluginDirectories.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "./providers.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "./Spinner.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "src/entrypoints/sdk/controlTypes.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "src/services/analytics/metadata.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "src/utils/model/providers.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "src/utils/theme.js",
+      "count": 9,
+      "file_count": 9
+    },
+    {
+      "name": "../utils/teleport/api.js",
+      "count": 12,
+      "file_count": 8
+    },
+    {
+      "name": "./parser.js",
+      "count": 11,
+      "file_count": 8
+    },
+    {
+      "name": "./loadAgentsDir.js",
+      "count": 10,
+      "file_count": 8
+    },
+    {
+      "name": "../dom.js",
+      "count": 9,
+      "file_count": 8
+    },
+    {
+      "name": "../tasks/InProcessTeammateTask/types.js",
+      "count": 9,
+      "file_count": 8
+    },
+    {
+      "name": "../utils/effort.js",
+      "count": 9,
+      "file_count": 8
+    },
+    {
+      "name": "../utils/teammate.js",
+      "count": 9,
+      "file_count": 8
+    },
+    {
+      "name": "./select.js",
+      "count": 9,
+      "file_count": 8
+    },
+    {
+      "name": "../../../bootstrap/state.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../../keybindings/useKeybinding.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../../utils/log.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../components/ConfigurableShortcutHint.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../constants/prompts.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../context/modalContext.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../context/overlayContext.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../services/mcp/utils.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../tools/FileEditTool/constants.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/claudemd.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/fullscreen.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/imageResizer.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/permissions/PermissionUpdate.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/permissions/shellRuleMatching.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/tasks.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../../utils/teammateContext.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../context/overlayContext.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../FileReadTool/prompt.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../ink/components/ScrollBox.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../messageActions.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../registry.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../services/api/claude.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../systemPromptType.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../tools/FileEditTool/constants.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "../utils/cleanupRegistry.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./array.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./common.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./context.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./debugUtils.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./MessageResponse.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./PermissionRule.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./pluginIdentifier.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./signal.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./styles.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./toolResultStorage.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "src/constants/oauth.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "src/tools/FileReadTool/prompt.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "src/types/ids.js",
+      "count": 8,
+      "file_count": 8
+    },
+    {
+      "name": "./utils/config.js",
+      "count": 9,
+      "file_count": 7
+    },
+    {
+      "name": "../Task.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "../utils/hooks.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "../utils/settings/constants.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "../utils/tasks.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "./bootstrap/state.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "./commands.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "src/commands.js",
+      "count": 8,
+      "file_count": 7
+    },
+    {
+      "name": "../../../../keybindings/useKeybinding.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../../hooks/useTerminalSize.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../../utils/debug.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../components/design-system/KeyboardShortcutHint.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../services/mcp/client.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../services/mcp/config.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/abortController.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/bash/shellQuote.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/cleanupRegistry.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/diagLogs.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/fastMode.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/fileStateCache.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/gracefulShutdown.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/messageQueueManager.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/model/providers.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/privacyLevel.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/semanticBoolean.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/settings/constants.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/teleport/api.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../AgentTool/constants.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../components/permissions/PermissionRequest.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../CtrlOToExpand.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../history.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../hooks/useExitOnCtrlCDWithKeybindings.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../ink/instances.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../memdir/paths.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../model/model.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../PermissionDialog.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../sleep.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../tools/AgentTool/constants.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../tools/FileReadTool/prompt.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../tools/FileWriteTool/prompt.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../utils/diagLogs.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../utils/intl.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../utils/permissions/PermissionMode.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./BashTool.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./env.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./hooks.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./layout/geometry.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./model/providers.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./utils/envUtils.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "./which.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/components/MessageResponse.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/hooks/useTerminalSize.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/tools/FileEditTool/constants.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/tools/GlobTool/prompt.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/tools/GrepTool/prompt.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/utils/gracefulShutdown.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "src/utils/settings/settings.js",
+      "count": 7,
+      "file_count": 7
+    },
+    {
+      "name": "../../utils/powershell/parser.js",
+      "count": 10,
+      "file_count": 6
+    },
+    {
+      "name": "./ink.js",
+      "count": 10,
+      "file_count": 6
+    },
+    {
+      "name": "../../components/CustomSelect/select.js",
+      "count": 7,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/permissions/permissionSetup.js",
+      "count": 7,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/swarm/teamHelpers.js",
+      "count": 7,
+      "file_count": 6
+    },
+    {
+      "name": "../utils/autoUpdater.js",
+      "count": 7,
+      "file_count": 6
+    },
+    {
+      "name": "./systemPromptType.js",
+      "count": 7,
+      "file_count": 6
+    },
+    {
+      "name": "../../../services/analytics/index.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../../state/AppState.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../../utils/messages.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../components/design-system/Pane.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../constants/toolLimits.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../context.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../context/notifications.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../hooks/useMainLoopModel.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../services/api/dumpPrompts.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../services/mcp/auth.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../services/mcp/MCPConnectionManager.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../services/mcp/mcpStringUtils.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../skills/loadSkillsDir.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../tools/AgentTool/constants.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../tools/FileWriteTool/prompt.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/hooks/postSamplingHooks.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/ide.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/ink.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/model/agent.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/permissions/permissions.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/plugins/marketplaceHelpers.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/plugins/pluginIdentifier.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/sessionIngressAuth.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/swarm/backends/registry.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/swarm/constants.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/terminal.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/toolResultStorage.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../../utils/worktree.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../attachments.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../constants.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../context.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../design-system/Tabs.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../FileEditTool/constants.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../hooks/useSettings.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../ink/termio/osc.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../ink/useTerminalNotification.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../loadAgentsDir.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../PermissionRuleExplanation.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../permissions/PermissionDialog.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../Spinner.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../tasks/LocalAgentTask/LocalAgentTask.js",
+      "count": 6,
+      "file_count": 6
+    },
+    {
+      "name": "../tools/AgentTool/agentColorManager.js",
+      "count": 6,
+      "file_count": 6
+    }
+  ]
+}
