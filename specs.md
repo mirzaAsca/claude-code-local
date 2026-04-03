@@ -35,12 +35,12 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
     - [ ] **1.4.3** Document edit policy: only these files are hand-edited; generated outputs are not.
 
 - [ ] **2. Automate missing-module discovery and recovery**
-  - [ ] **2.1** Add `scripts/reconstruct-scan` to produce unresolved runtime imports, unresolved type imports, and recoverable vs non-recoverable targets.
-    - [ ] **2.1.1** Walk all `*.ts`/`*.tsx` source files and parse `import`/`export ... from` + dynamic `import()`.
-    - [ ] **2.1.2** Resolve relative paths and `src/*` alias, including `.js` specifiers pointing to `.ts/.tsx` files.
-    - [ ] **2.1.3** Separate `import type` misses from runtime misses.
-    - [ ] **2.1.4** Emit machine-readable reports to `reconstruction/reports/` (`unresolved-runtime.json`, `unresolved-types.json`, `scan-summary.json`).
-    - [ ] **2.1.5** Exit non-zero when newly missing runtime imports are introduced vs manifest baseline.
+  - [x] **2.1** Add `scripts/reconstruct-scan` to produce unresolved runtime imports, unresolved type imports, and recoverable vs non-recoverable targets.
+    - [x] **2.1.1** Walk all `*.ts`/`*.tsx` source files and parse `import`/`export ... from` + dynamic `import()`.
+    - [x] **2.1.2** Resolve relative paths and `src/*` alias, including `.js` specifiers pointing to `.ts/.tsx` files.
+    - [x] **2.1.3** Separate `import type` misses from runtime misses.
+    - [x] **2.1.4** Emit machine-readable reports to `reconstruction/reports/` (`unresolved-runtime.json`, `unresolved-types.json`, `scan-summary.json`).
+    - [x] **2.1.5** Exit non-zero when newly missing runtime imports are introduced vs manifest baseline.
   - [ ] **2.2** Add `scripts/reconstruct-hydrate` to ingest public artifacts, generate recoverable files, and generate explicit stub modules for non-recoverable files (with TODO headers and provenance tags).
     - [ ] **2.2.1** Define source inputs directory (`reconstruction/sources/`) and accepted source kinds (`npm-tarball`, `public-repo`, `manual-adapted`).
     - [ ] **2.2.2** For recoverable targets, write recovered modules with provenance header including source URL/ref and commit/tag.
