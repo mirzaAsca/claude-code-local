@@ -62,10 +62,10 @@ Default target: near-full parity with direct API-key usage (no bundled Anthropic
       - [x] **3.1.2.1** Recover/stub direct imports in `commands.ts` and command descriptors needed by `help`, `config`, `session`, `permissions`.
       - [x] **3.1.2.2** Keep unavailable commands hidden behind `isEnabled()` + feature gates rather than hard failure.
       - [x] **3.1.2.3** Ensure `findCommand()/getCommands()` do not throw during initial REPL boot.
-    - [ ] **3.1.3** Core task/tool wiring.
-      - [ ] **3.1.3.1** Recover/stub required modules for `Tool.ts`, `tools.ts`, `services/tools/toolExecution.ts`, `services/tools/toolOrchestration.ts`.
-      - [ ] **3.1.3.2** Ensure permission pipeline remains intact (`utils/permissions/permissions.ts`).
-      - [ ] **3.1.3.3** Keep task polling/storage path functional (`Task.ts`, `tasks.ts`, `utils/task/*`).
+    - [x] **3.1.3** Core task/tool wiring.
+      - [x] **3.1.3.1** Recover/stub required modules for `Tool.ts`, `tools.ts`, `services/tools/toolExecution.ts`, `services/tools/toolOrchestration.ts`.
+      - [x] **3.1.3.2** Ensure permission pipeline remains intact (`utils/permissions/permissions.ts`).
+      - [x] **3.1.3.3** Keep task polling/storage path functional (`Task.ts`, `tasks.ts`, `utils/task/*`).
     - [ ] **3.1.4** Required type modules (`types/message`, `types/tools`, and related control/runtime SDK types).
       - [x] **3.1.4.1** Reconstruct `types/message.ts` and `types/tools.ts` first (highest fan-out imports).
       - [x] **3.1.4.2** Reconstruct missing SDK transport types (`entrypoints/sdk/controlTypes.ts`, related SDK utility types).
